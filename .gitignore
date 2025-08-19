@@ -1,0 +1,11 @@
+/cache/
+/logs/
+/alpine/
+/citizen/
+/server
+*.log
+*.zip
+*.tar.xz
+*.sql
+*.tmp
+*.bak
