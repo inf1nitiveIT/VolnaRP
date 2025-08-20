@@ -17,7 +17,7 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
-            cd ~/txData/QBCore_A4C195.base
+            cd /home/inf1nitive/fxserver/txData/QBCore_A4C195.base
             git pull origin main
 
             # Безопасное завершение старой screen-сессии
@@ -26,5 +26,5 @@ jobs:
             fi
 
             # Запуск новой screen-сессии
-            cd ~/fxserver
+            cd /home/inf1nitive/fxserver
             screen -S fivem -dm bash run.sh
