@@ -26,5 +26,4 @@ jobs:
             fi
 
             # Запуск новой screen-сессии
-            cd /home/inf1nitive/fxserver
-            screen -S fivem -dm bash run.sh
+            screen -S fivem -dm bash -c 'cd ~/fxserver && bash run.sh'
