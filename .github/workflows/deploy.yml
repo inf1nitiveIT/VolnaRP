@@ -23,6 +23,7 @@ jobs:
             # Безопасное завершение старой screen-сессии
             if screen -list | grep -q "fivem"; then
               screen -S fivem -X quit
+              sleep 5
             fi
 
             # Запуск новой screen-сессии
