@@ -38,7 +38,7 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           source: server.cfg
-          target: /home/inf1nitive/fxserver/txData/QBCore_A4C195.base/server.cfg
+          target: /home/inf1nitive/fxserver/txData/QBCore_A4C195.base
 
       # 5. Подключаемся по SSH и перезапускаем сервер
       - name: Restart FiveM via SSH
