@@ -1,11 +1,34 @@
+# --- Кэш и runtime директории ---
 /cache/
 /logs/
 /alpine/
 /citizen/
-/server
+/server/
+monitor/
+data/
+
+# --- Логи, архивы, дампы, временные ---
 *.log
 *.zip
 *.tar.xz
 *.sql
 *.tmp
 *.bak
+*.bkp
+
+# --- Конфиги и секреты ---
+server.cfg
+server.cfg.*
+!server.template.cfg
+.env
+.env.*
+*.env.local
+.replxx_history
+
+# --- IDE, окружение и прочее ---
+.vscode/
+.idea/
+.DS_Store
+node_modules/
+dist/
+build/
